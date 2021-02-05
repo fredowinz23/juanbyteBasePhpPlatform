@@ -1,7 +1,7 @@
 <?php
 class Database
 {
-    private static $dbName = 'quarantine.db' ;
+    private static $dbName = 'databaseName.db' ;
     private static $dbHost = 'localhost' ;
     private static $dbUsername = 'root';
     private static $dbUserPassword = '';

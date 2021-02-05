@@ -3,6 +3,16 @@
 $error = (isset($_GET['error']) && $_GET['error'] != '') ? $_GET['error'] : '';
 $success = (isset($_GET['success']) && $_GET['success'] != '') ? $_GET['success'] : '';
 
+function get_query_string($keyword){
+	return (isset($_GET[$keyword]) && $_GET[$keyword] != '') ? $_GET[$keyword] : '';
+}
+
+
+
+
+
+/* =====================================Functions===================================== */
+
 /* Retrieve one record */
 function uploadFile($uploadedFile){
 	// Where the file is going to be placed
@@ -21,7 +31,8 @@ function uploadFile($uploadedFile){
 		}
 }
 
-/* =====================================Functions===================================== */
+
+
 /* Retrieve one record */
 function uploadMultipleFile($uploadedFile){
 
